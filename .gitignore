@@ -9,4 +9,5 @@ wheels/
 # Virtual environments
 .venv
 .env
-/credentials.json
+credentials.json
+token.json
