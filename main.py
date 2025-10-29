@@ -4,6 +4,7 @@ import time
 from schema import *
 from agent import LLMagent as agent
 from Prompt import ExtractTaskLlm
+from Googletask import createTask
 
 def scrape_linkedin_posts(query):
     with sync_playwright() as p:
@@ -35,7 +36,13 @@ def scrape_linkedin_posts(query):
             # Extract author
             author_tag = post.find("span", class_="update-components-actor__title")
             author_name = author_tag.get_text(strip=True) if author_tag else "Author not found"
-            print(agent(ExtractTaskLlm(url=post_url, text=text)))
+            agentFeedback = agent(ExtractTaskLlm(url=post_url, text=text))
+            createTask({
+                "title" : f"LinkedIn Application -> {agentFeedback["job_title"]}",
+                "notes" : f"{agentFeedback["hiring_task"]} - {agentFeedback["post_url"]}"   
+
+            })
+
             # Filter for job/freelance keywords
             # if any(k in text.lower() for k in ["hire", "freelance", "project", "looking for", "remote"]):
             #     print(f"Author: {author_name}")
@@ -45,5 +52,4 @@ def scrape_linkedin_posts(query):
         input("Press Enter to close the browser...")
         browser.close()
 
-# Example usage
-scrape_linkedin_posts("freelance developer")
+scrape_linkedin_posts('''"freelance project" OR "looking for freelancer" OR "need a freelancer" OR "hiring freelancer" OR "freelance work"''')

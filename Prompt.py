@@ -1,5 +1,5 @@
 def ExtractTaskLlm(url: str, text: str) -> str:
-    prompt = f'''This is a post from linkedin 'Author: nisha Shahnisha Shah• 3rd+3rd+
+    prompt = f'''This is a post from linkedin
         URL:{url}
         Text: {text}
         , extract the info'''
