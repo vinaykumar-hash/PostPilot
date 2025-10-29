@@ -2,6 +2,8 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 import os
+from google.auth.transport.requests import Request
+
 SCOPES = ["https://www.googleapis.com/auth/tasks"]
 
 def createTask(task : dict):
@@ -24,8 +26,8 @@ def createTask(task : dict):
 
     result = service.tasks().insert(tasklist="@default", body=task).execute()
     print(f"[Task created] : {result['title']}")
-# createTask({
-#     "title" : "Message freelancer on LinkedIn",
-#     "notes" : "Follow up on collaboration post found by scraper."
+createTask({
+    "title" : "Message freelancer on LinkedIn",
+    "notes" : "Follow up on collaboration post found by scraper."
 
-# })
+})
