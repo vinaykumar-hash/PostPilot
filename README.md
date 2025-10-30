@@ -129,15 +129,16 @@ LinkedIn_Posttool/
 ```
 [Task created] : LinkedIn Application -> Freelance UI/UX Designer
 ```
-```
-![Screenshot](https://drive.google.com/uc?export=view&id=1OKeCiZZDXCWapq6Ee21lWvu8xBzEybfg)
+<img width="690" height="670" alt="Screenshot 2025-10-30 170823" src="https://github.com/user-attachments/assets/53a3e5b2-e0b6-4d5e-9883-99bf88949718" />
 
-```
+
 ---
 
 ## 💡 Made With
 
+
 ❤️ by [Vinay Kumar](https://github.com/vinaykumar-hash)  
 🧠 Powered by **Gemini AI**, **Playwright**, and **Google Tasks API**
+
 
 
