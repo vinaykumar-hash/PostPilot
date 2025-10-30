@@ -11,3 +11,4 @@ wheels/
 .env
 credentials.json
 token.json
+linkedin_session/
