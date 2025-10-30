@@ -130,8 +130,8 @@ LinkedIn_Posttool/
 [Task created] : LinkedIn Application -> Freelance UI/UX Designer
 ```
 ```
-[Screenshot ![Example] (https://drive.google.com/file/d/1OkeCiZZDXCWapq6Ee2llVwu8xBzEybfg/view?usp=sharing)](https://drive.google.com/uc?export=view&id=1OKeCiZZDXCWapq6Ee21lWvu8xBzEybfg
-)
+![Screenshot](https://drive.google.com/uc?export=view&id=1OKeCiZZDXCWapq6Ee21lWvu8xBzEybfg)
+
 ```
 ---
 
@@ -139,4 +139,5 @@ LinkedIn_Posttool/
 
 ❤️ by [Vinay Kumar](https://github.com/vinaykumar-hash)  
 🧠 Powered by **Gemini AI**, **Playwright**, and **Google Tasks API**
+
 
