@@ -6,8 +6,8 @@ with sync_playwright() as p:
     page = browser.new_page()
     page.goto("https://www.linkedin.com/login")
 
-    print("🔐 Please log in to LinkedIn manually in the opened browser window.")
-    input("✅ Press Enter after you’ve successfully logged in and can see your feed...")
+    print("[*] Please log in to LinkedIn manually in the opened browser window.")
+    input("[*] Press Enter after you’ve successfully logged in and can see your feed...")
 
     browser.close()
-    print("🎉 Session saved. You won’t need to log in again next time!")
+    print("[*] Session saved. You won’t need to log in again next time!")

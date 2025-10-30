@@ -26,8 +26,8 @@ def createTask(task : dict):
 
     result = service.tasks().insert(tasklist="@default", body=task).execute()
     print(f"[Task created] : {result['title']}")
-createTask({
-    "title" : "Message freelancer on LinkedIn",
-    "notes" : "Follow up on collaboration post found by scraper."
+# createTask({
+#     "title" : "Message freelancer on LinkedIn",
+#     "notes" : "Follow up on collaboration post found by scraper."
 
-})
+# })

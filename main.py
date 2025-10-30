@@ -42,13 +42,6 @@ def scrape_linkedin_posts(query):
                 "notes" : f"{agentFeedback["hiring_task"]} - {agentFeedback["post_url"]}"   
 
             })
-
-            # Filter for job/freelance keywords
-            # if any(k in text.lower() for k in ["hire", "freelance", "project", "looking for", "remote"]):
-            #     print(f"Author: {author_name}")
-            #     print(f"URL: {post_url}")
-            #     print(f"Text: {text[:300]}...\n")
-
         input("Press Enter to close the browser...")
         browser.close()
 
